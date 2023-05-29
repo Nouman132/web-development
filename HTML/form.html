@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Student Registration </title>
+    <link rel="stylesheet" href="./css/form.css">
+
+</head>
+
+<body>
+    <div class="img">
+        <img src="./images/logo.png" alt="">
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="input">
+                <label  class="label"for="fname">First Name:</label>
+            </div>
+            <div class="input">
+                <input type="text" id="fname" name="firstname" placeholder="Enter your first name">
+            </div>
+        </div>
+        <div class="row">
+            <div class="input">
+                <label for="lname">Last Name:</label>
+            </div>
+            <div class="input">
+                <input type="text" id="lname" name="lastname" placeholder="Enter your last name">
+            </div>
+        </div>
+        <div class="row">
+            <div class="input">
+                <label for="email">Email:</label>
+            </div>
+            <div class="input">
+                <input type="email" id="email" name="email" placeholder="it should contain @,.">
+            </div>
+        </div>
+        <div class="row">
+            <div class="input">
+                <label for="mobile">Mobile:</label>
+            </div>
+            <div class="input">
+                <input type="tel" id="mobile" name="mobile" placeholder="only 10 digits are allowed">
+            </div>
+        </div>
+        <div class="row">
+            <div class="input">
+                <label for="gender" required>Gender:</label>
+            </div>
+            <div class="gender">
+                <input type="radio" id="male" name="gender" value="male" />Male
+                <input type="radio" id="female" name="gender" value="female" />Female
+            </div>
+        </div>
+        <div class="row">
+            <div class="input">
+                <label for="dob">Date Of Birth:</label>
+            </div>
+            <div class="input">
+                <input type="Date" id="dob" name="dob">
+            </div>
+        </div>
+        <div class="row">
+            <div class="input">
+                <label for="address">Address:</label>
+            </div>
+            <div class="input">
+                <textarea name="address" id="address" cols="30" rows="10"></textarea>
+            </div>
+        </div>
+        <div class="row">
+            <div class="input">
+                <label for="city">City:</label>
+            </div>
+            <div class="input">
+                <input type="text" id="city" name="city" maxlength="10">
+            </div>
+        </div>
+        <div class="row">
+            <div class="input">
+                <label for="pincode">Area PIN:</label>
+            </div>
+            <div class="input">
+                <input type="number" id="pin" name="pin" maxlength="6">
+            </div>
+        </div>
+        <div class="row">
+            <div class="input">
+                <label for="state">State:</label>
+            </div>
+            <div class="input">
+                <input type="text" id="state" name="state">
+            </div>
+        </div>
+        <div class="row">
+            <div class="input">
+                <label for="qualification" required>Qualification:</label>
+            </div>
+            <div class="input">
+                <select name="qualification" id="qualification">
+                    <option value=" ">Select Courses:</option>
+                    <option value="Web development">web development</option>
+                    <option value="cyber security.">cyber securiyt.</option>
+                    <option value="SEO.">SEO.</option>
+                    <option value="Networking">Networking</option>
+                    <option value="Graphics design">Graphic design </option>
+                </select>
+            </div>
+        </div>
+        
+        <div class="row">
+            <div class="input">
+                <label for="password">Password:</label>
+            </div>
+            <div class="input">
+                <input type="password" id="password" name="password" maxlength="8">
+            </div>
+        </div>
+        <div class="row">
+            <input type="submit" value="Registered" onclick="SaveStudentDetails()">
+        </div>
+    </div>
+</body>
+
+</html>
